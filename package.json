@@ -1,0 +1,21 @@
+{
+  "name": "glass-lib",
+  "version": "1.0.0",
+  "description": "glassmorphism css library",
+  "main": "dist/glass-library.min.css",
+  "scripts": {
+    "build": "node-sass index.scss dist/glass-library.css",
+    "build-compact": "node-sass --output-style compressed index.scss dist/glass-library.min.css",
+    "build-all": "npm run build && npm run build-compact"
+  },
+  "keywords": [
+    "css",
+    "library",
+    "glassmorphism"
+  ],
+  "author": "Marsellino Benny",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
